@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+    </head>
+    <body>
+            <h1 id="ket_qua"></h1>
+        <script>
+            let diem_thi = [9, 8, 6, 6.7, 5, 9, 10, 4.9, 8.6];
+                function findAvg(diem_thi){
+                    let diem_tong = 0;
+                    for (let i = 0; i < diem_thi.length; i++) {
+                        diem_tong += diem_thi[i];
+                    }
+
+                    let diem_trung_binh = diem_tong / (diem_thi.length);
+                    return diem_trung_binh;
+                }
+
+                let diem_trung_binh = findAvg(diem_thi);
+            document.getElementById('ket_qua').innerHTML = "Điểm trung bình của danh sách điểm thi là: " + diem_trung_binh + " điểm";
+        </script>
+    </body>
+</html>
